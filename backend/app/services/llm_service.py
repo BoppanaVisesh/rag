@@ -1,8 +1,9 @@
 import os
+from pathlib import Path
 from openai import OpenAI
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(dotenv_path=Path(__file__).resolve().parents[2] / ".env")
 
 def generate_answer(question, context):
     api_key = os.getenv("OPENAI_API_KEY")

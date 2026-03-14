@@ -1,5 +1,6 @@
 __pycache__/
 *.pyc
 .env
+backend/.env
 uploads/
 vector_db/
